@@ -1,0 +1,95 @@
+body {
+  overflow: hidden;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-scroll {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+td {
+  border: 1px solid #E1E1E1;
+  padding-left: 10px;
+}
+
+th {
+  border: 1px solid #E1E1E1;
+  padding: 20px;
+}
+
+.data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.dog-img img {
+  height: 400px;
+  width: 450px;
+}
+
+.dog-img {
+  background: #eee;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 img {
+  width: 30px;
+}
+
+.view-btn {
+  background-color: white;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.logout-btn {
+  padding: 20px;
+  width: 90px;
+  border: none;
+  background-color: #1a91db;
+  color: white;
+  cursor: pointer;
+}
+
+nav h2 {
+  margin: 0 0 0 50%;
+}
+
+.heading h3 {
+  margin-left: 20px;
+}
+
+
+@media (max-width:600px) {
+  .data {
+    display: block;
+  }
+
+  /* .table-scroll {
+    height: auto;
+  } */
+  nav h2{
+    margin-left:0 ;
+  }
+}
